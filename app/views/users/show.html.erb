@@ -1,0 +1,10 @@
+
+<%=@user.first_name %>
+<%=@user.last_name %>
+<%=@user.email %>
+<% if current_user && current_user.editor? || current_user.admin? %>
+<%=link_to "Edit", edit_user_path(@user) %>
+<% end %>
+<% if current_user && current_user.admin? %>
+<%= link_to "Delete", user_path(@user), method: "delete" %><p>
+<% end %>
