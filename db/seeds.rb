@@ -7,6 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-mateo = User.create(username: 'eleto', first_name: 'Liz', last_name: 'Letourneau', email: 'liz@email.com', password: 'root', password_confirmation: 'root', role: 'admin')
+liz = User.create(username: 'eleto', first_name: 'Liz', last_name: 'Letourneau', email: 'liz@email.com', password: 'root', password_confirmation: 'root', role: 'admin')
+elizabeth = User.create(username: 'elizabeth', first_name: 'Elizabeth', last_name: 'Letourneau', email: 'elizabeth.letourneau@shopify.com', password: 'root', password_confirmation: 'root', role: 'admin')
+root = User.create(username: 'root', first_name: 'root', last_name: 'root', email: 'liz@root.com', password: 'root', password_confirmation: 'root', role: 'admin')
 julian = User.create(username: 'fred', first_name: 'Julian', last_name: 'Jones', email: 'julian@email.com', password: 'Julian1', password_confirmation: 'Julian1')
 freida = User.create(username: 'george', first_name: 'Freida', last_name: 'Gray', email: 'freida@email.com', password: 'Freida1', password_confirmation: 'Freida1', role: 'admin')
