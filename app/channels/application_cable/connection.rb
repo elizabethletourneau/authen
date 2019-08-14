@@ -10,9 +10,8 @@ module ApplicationCable
 
     private
       def find_verified_user
-        puts "BAANANANANANANANANAN"
         puts cookies.encrypted[:user_id]
-        if user = User.find_by(id: session[:current_user_id])
+        if user = User.find_by(id: cookies[:user_id])
           user
         else
           reject_unauthorized_connection

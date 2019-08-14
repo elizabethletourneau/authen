@@ -8,6 +8,7 @@ class SessionsController < ApplicationController
       if @user &&
         @user.authenticate(params[:session][:password])
         session[:user_id] = @user.id
+        cookies[:user_id] = @user.id
         redirect_to '/rooms'
       else
         redirect_to '/login'
